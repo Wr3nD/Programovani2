@@ -1,0 +1,60 @@
+/*Selector {
+	Property: value;
+}*/
+* { /*signals all elements*/
+	text-align: right;
+}
+body{
+	background-image: url(https://images.unsplash.com/photo-1638385582671-74c20b983ee4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80);
+	background-size: cover;
+
+}
+
+p {
+	color: #AA3939;
+	text-align: center;
+	border:  5px solid rgb(255, 170, 170); /*lze přidat do rgb i 4ty čislo 0 - 1 0 nepropouští nic 1 propouští vše mužeš dělat fades*/
+	cursor: pointer;
+}
+
+p {
+	color: pink;
+}
+
+p { /*CSS = znamená caskádové style sheets což znamená že se aplikují všechny a aktivní zustane ten poslední jako vo tomto případě s barvením textu */
+	color: green;
+	text-decoration: underline;
+	line-height: 50px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+img{
+float: right;
+}
+
+footer{
+clear: both;
+text-align: center;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+
+}
+
+.webtext:last-child {
+	border: 5px dashed green;
+}
+.active{
+	color: darkred;
+}
+
+#div1 :hover{
+	background: yellowgreen;
+}
+#div2 {
+	background: rgba(255, 0, 0, 0.6);
+}

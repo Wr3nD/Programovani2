@@ -1,0 +1,24 @@
+h2{
+	color: blue;
+}
+
+.boxmodel {
+	border: 5px solid red;
+	display: inline-block; 
+	padding: 5px 20px 5px 20px; /*top right botom left */
+	margin: 0px 20px; /* top + botom a levá + pravá */
+	width: 33px;
+	height: 55px;
+	
+}
+p {
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: bold;
+
+}
+span {
+		font-size: 2em;
+		 /* dává hodnotu 5násobku proměné v které je vložené tudíž 5x 20px je to dost usefull protozže zustává relevantní Pčku*/
+		 /* pak je tu ještě 2rem ten dává taky násobk ale vůči root elementu a bude to 2x násobek velikosti stránky */
+}

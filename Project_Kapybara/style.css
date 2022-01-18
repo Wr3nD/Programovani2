@@ -1,0 +1,78 @@
+/* MAIN index */
+body{
+    margin: 0 auto;
+    /* background: -webkit-linear-gradient(top, #fb7aff 0%,#e660f8 44%,#d140ee 100%); Chrome10+,Safari5.1+ */
+}
+
+.container{
+  display: grid;
+  background-color: royalblue;
+}
+
+.header{
+    background: -webkit-linear-gradient(top, #fb7aff 0%,#e660f8 44%,#d140ee 100%); /* Chrome10+,Safari5.1+ */
+}
+
+ul {
+    display: flex;
+    columns: row;
+    margin: 0 auto;
+    
+}
+
+.topside{
+    margin: 10px;
+list-style: none;
+font-size: 1.5em;
+}
+
+.push{
+
+margin: 10px;
+margin-left: auto;
+list-style: none;
+font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+/* MIDDLE */
+.middle{
+  display: block;
+  display: flex;
+  height: 10em;
+  align-items: center;
+  justify-content:safe center;
+  background-color: red;
+}
+/* stats */
+
+  
+.stats{
+margin: auto;
+margin-top: 50px;
+
+}
+
+caption{
+    font-size: 1.5rem;
+}
+#datasets-example-4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 20px;
+    max-width: 800px;
+    
+  }
+  #datasets-example-4 .column {
+    height: 300px;
+    max-width: 700px;
+  }
+  #datasets-example-4 .legend {
+    flex-shrink: 3;
+    max-width: 100px;
+    font-size: 0.75rem;
+  }
+  

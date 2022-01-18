@@ -1,0 +1,29 @@
+body{
+    margin: 2rem;
+}
+
+.container{
+    display: grid;
+    
+   
+}
+
+.box{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: flex-start;
+    
+   
+    
+}
+
+input{
+    width: 10rem;
+    
+    
+}
+.submit{
+    width: 5rem;
+    margin-top: 1rem;
+}
