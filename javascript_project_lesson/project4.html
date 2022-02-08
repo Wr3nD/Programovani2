@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4</title>
+</head>
+<body>
+
+    <h1>Tip calculator</h1>
+    <h3 id="test">tady</h3>
+<!-- 1.Create a simple tip calculator
+2.it need to accept 2 parameters
+3. Make the tip parameter optional
+4. return the total amount and save it to a var -->
+
+<script>
+    let price = prompt("how mzch was the bill ?")
+    let answer = "číslo"
+    function tipCalc(bill,tip=5){
+        tip = tip / 100
+       let tipAmount = bill * tip
+       let totalAmount = bill + tipAmount
+     return test.innerHTML = "your Bill is " + totalAmount
+    }
+    
+    tipCalc(price)
+</script>
+
+</body>
+</html>

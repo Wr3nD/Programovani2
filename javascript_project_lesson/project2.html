@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.Ask user  for URL
+    2.check if the link starts with http
+    3.if id doesnt start with http fix the variable
+    4.inject a link into your page using innerHTML -->
+<h1>this is the link :</h1>
+<h3 id="customInput">_______</h3>
+
+    <script>
+        let name = prompt("Tell me your URL ")
+        const sub = name.substring(0,4)
+        
+        
+        if(sub != "http"){
+         name = "http://" + name
+        }
+        let h3node = document.getElementById("customInput")
+
+        h3node.innerHTML = "<a href='"+name+"'>" + name +"</a>"
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    Bill Amount ( in $)   <input type="number" class="form" style="padding: 20px;font-size: 2rem;">
+    <br><br>
+    Tip Amount (as a %) <input type="number" class="form2" style="padding: 20px;font-size: 2rem;">
+    <br>
+    <br>
+    <button style="background-color: brown; color: #fff; padding: 15px; font-size: 2rem;" 
+    onclick="calculate()">Calculate tip and total bill</button>
+    <h3>your tip is</h3>
+    <small>total bill is</small>
+    <script>
+        function calculate(){
+        let input1 = document.querySelector(".form")
+        let input2 = document.querySelector(".form2")
+        let value1 = Number(input1.value)
+        let value2 = Number((input2.value)/100)
+        
+        let tip = value1 * value2
+        
+        let total = (value1 * value2)+ value1
+           
+        let h3 = document.querySelector("h3")
+        let small = document.querySelector("small")
+        
+        h3.innerHTML = "your total bill is :" + total +"$"
+        small.innerHTML = "your tip is :" + tip +"$"
+        }
+    </script>
+</body>
+</html>

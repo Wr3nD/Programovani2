@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <h1>changing CSS with event listeners</h1>
+    <div>
+        <label>background color</label>
+        <input type="text" class="js-bg-color" style="padding: 30px; font-size: 30px;">
+    </div>
+    <div>
+        <label>Text color</label>
+        <input type="text" class="js-text-color" style="padding: 30px; font-size: 30px;">
+    </div>
+    <div>
+        <label>Font Size</label>
+        <input type="text" class="js-font-size" style="padding: 30px; font-size: 30px;">
+    </div>
+
+    <script>
+        let bgColor = document.querySelector(".js-bg-color")
+        let textColor = document.querySelector(".js-text-color")
+        let fontSize = document.querySelector(".js-font-size")
+        let body = document.querySelector("body")
+        body.style.backgroundColor = "red"
+        body.style.color = "white"
+        function colorRead(event){
+           
+            body.style.backgroundColor = event.target.value
+        }
+        function textRead(event){
+            body.style.color = event.target.value
+        }
+        function fontRead(event){
+            body.style.fontSize = event.target.value
+        }
+
+        bgColor.addEventListener("keyup",colorRead)
+        textColor.addEventListener("keyup",textRead)
+        fontSize.addEventListener("keyup",fontRead)
+
+    </script>
+</body>
+</html>
