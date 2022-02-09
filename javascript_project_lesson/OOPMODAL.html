@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.create a button that will open a modal
+    2. create a button that will close a modal
+    3. write all of this inside of an object or a class, inluding the functions/ methods
+     -->
+     <h1>Hello stranger</h1>
+     <button class="btn-open" onclick="ans.clicker()">
+        CLICK ME!
+     </button>
+     
+     <div style="position: fixed; top: 50%; left: 50%; border: 1px solid red; background-color: red;
+      width: 50%; padding: 20px; transform: translate(-50%, -50%); display: none;"
+      class="box">
+      <h2 class="js-modal-title">This is modal</h2>
+      <p class="js-modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, consequatur non itaque amet veniam ut quos!
+           Harum velit ratione officia quibusdam laboriosam numquam sapiente dicta? Aspernatur veniam vero ducimus voluptatibus
+            nobis facilis quidem deleniti? Ut quo 
+          unde iusto aliquid, nemo molestias ipsum deserunt rem, architecto in enim et adipisci cumque!</p>
+          <button class="btn-close" onclick="ans.hider()">
+            CLOSE ME!
+         </button>
+    </div>
+
+<script>
+    // let btn = document.querySelector(".btn-open");
+    // let btn1 = document.querySelector(".btn-close");
+    let h1 = document.querySelector("h1");
+    let body = document.querySelector("body")
+    let div = document.querySelector(".box")
+    // function clicker(){
+    //     body.style.backgroundColor = "black"
+    //     body.style.color = "white"
+    //     div.style.display = "block"
+    // }
+    // function hider(){
+    //     body.style.backgroundColor = "white"
+    //     body.style.color = "black"
+    //     div.style.display = "none"
+    // }
+    class Task {
+        constructor(title,text){
+            if(title !== undefined){
+            this.ans.querySelector("js-modal-title").innerText = title
+            }
+            if(text !== undefined){
+            this.ans.querySelector("js-modal-text").innerText = text
+            }
+        }
+        clicker(){
+        body.style.backgroundColor = "black"
+        body.style.color = "white"
+        div.style.display = "block"
+    }
+        hider(){
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+        div.style.display = "none"
+    }
+    }
+    const ans = new Task()
+    
+    
+</script>
+
+</body>
+</html>

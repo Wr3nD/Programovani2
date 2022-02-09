@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h1>hi there</h1>
+    <!-- create a loop that always ask for a number
+    if the number is incorrect ask again
+    if the number is correct break out of the loop -->
+<script>
+    let body = document.querySelector("body")
+    
+    while(true){
+        let ask = Number(prompt("try to quess a number"))
+        //první ask znamená if ask is a number = true + podmínka 2 => udělej
+            if(ask && ask === 42){
+                
+                body.style.backgroundColor = "red"
+                body.style.color = "white"
+                body.innerHTML = "<h1>YOU WON</h1>"
+                break;
+            }
+         
+        
+    }
+</script>
+</body>
+
+</html>
