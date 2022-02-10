@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<body>
+    
+    <form >
+        <input type="number" id="num1"/>
+        <select id="optionBar">
+            <option value="add"> Plus</option>
+            <option value="minus"> Minus</option>
+            <option value="divide"> Divide By</option>
+            <option value="multiply"> Multiplied By</option>
+        </select>
+        <input type="number" id="num2"/>
+        <button type="button" onclick="Calculate()">Calculate</button>
+    </form>
+    <div id="answer"></div>
+
+    <script>
+        let answer = ""
+        function Calculate(){
+        let input1 = document.getElementById("num1")
+        let input2 = document.getElementById("num2")
+        let ans = document.getElementById("answer")
+        let inputValue1 = Number(input1.value)
+        let inputValue2 = Number(input2.value)
+        let selectValue = document.getElementById("optionBar").value
+        
+        // switch(selectValue){
+        //     case selectValue === "add" :
+                
+        //         answer = inputValue1+inputValue2 
+        //         break;
+        //     case selectValue === "minus" :
+                
+        //         answer = inputValue1-inputValue2 
+        //         break;
+        //     case selectValue === "divide" :
+                
+        //         answer = inputValue1/inputValue2 
+        //         break;
+        //     case selectValue === "multiply" :
+                
+        //         answer = inputValue1*inputValue2 
+        //         break;
+        if(selectValue === "add"){
+            answer = inputValue1+inputValue2
+        }else if(selectValue === "minus"){
+            answer = inputValue1-inputValue2
+        }else if(selectValue === "divide"){
+            answer = inputValue1/inputValue2
+        }else {
+            answer = inputValue1*inputValue2
+        }
+        
+         ans.innerHTML = `<h1>${answer}</h1>`
+        console.log(inputValue2)
+        console.log(selectValue)
+        
+        }
+    </script>
+</body>
+</html>

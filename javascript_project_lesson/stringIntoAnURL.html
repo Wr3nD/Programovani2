@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String into an URL</title>
+</head>
+<body>
+    <h1>tvoje odpověd je :</h1>
+    <h2>tvoje odpověd je :</h2>
+
+    <script>
+        const ask = prompt("tell me your url").toLowerCase().split(" ").join("-").trim()
+        console.log(ask)
+        let h2 = document.querySelector("h2")
+        h2.innerHTML = `<a href="https//:${ask}.cz">klik</a>`
+    </script>
+</body>
+</html>
