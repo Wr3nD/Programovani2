@@ -56,13 +56,15 @@ const tipAmount = (bill,selectedTip,numberOfPeople) =>{
 
 const totalAmount = (bill,selectedTip,numberOfPeople) =>{
     if(value1 !== "" && tipCount !== "" && numberOfPeople === ""){
-        total = parseInt((bill*(selectedTip/100)))
+        total = (parseInt((bill*(selectedTip/100))))
         total += parseInt(bill)
         return load2.innerHTML = "$"+total
     }
     else if(value1 !== "" && tipCount !== "" && numberOfPeople !== ""){
-    total = parseInt((bill*(selectedTip/100)))
+    total = (parseInt((bill*(selectedTip/100))))
     total += parseInt(bill)
+    total = total/numberOfPeople
+    
        return load2.innerHTML = "$"+total
     }else{
         return load1.innerHTML = "$0.00"
