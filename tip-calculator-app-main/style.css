@@ -6,11 +6,13 @@
   color: hsl(228, 45%, 44%);
 }
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Space Mono", monospace;
+  /* font-size: 24px; */
 }
 p {
   color: grey;
+  text-align: left;
+  margin-bottom: 5px;
 }
 h1 {
   text-align: center;
@@ -20,6 +22,7 @@ h1 {
 }
 h2 {
   color: #20c5ad;
+  font-size: 2rem;
 }
 body {
   background-color: #c5e4e7;
@@ -34,6 +37,7 @@ button:hover {
 }
 strong {
   color: #fffeff;
+  margin-top: 26.5px;
 }
 .header {
   /* display: flex;
@@ -50,7 +54,7 @@ strong {
 .box {
   background-color: white;
   display: grid;
-  width: 600px;
+  width: 800px;
 
   border-radius: 1rem;
   justify-content: center;
@@ -61,9 +65,7 @@ strong {
 
   /* display: inline-block; */
 }
-.push {
-  margin-left: 2rem;
-}
+
 .left-box {
   display: grid;
 }
@@ -74,19 +76,29 @@ strong {
 .btns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 1.5rem;
 }
 .btn-left {
   background-color: #00474b;
-  padding: 0.3rem;
+
   margin: 0.3rem;
   color: whitesmoke;
 }
+.btn-box {
+  display: grid;
+
+  padding: 0 2rem 0 2rem;
+}
+
 .btn-left,
 .btn-input {
-  max-width: 70px;
+  max-width: 95px;
   border-radius: 0.3rem;
-  max-height: 35px;
+  max-height: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+.btn-input {
+  margin: 1px;
 }
 .btn-left:active {
   background-color: #9fe8df;
@@ -110,7 +122,7 @@ strong {
 .btn-right {
   background-color: #9fe8df;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-top: 5rem;
   border-radius: 0.5rem;
   color: #00474b;
@@ -123,13 +135,13 @@ strong {
 }
 #bill {
   background-image: url("./images/icon-dollar.svg");
-  background-position: 10px 5px;
+  background-position: 12px 14px;
   background-repeat: no-repeat;
   text-align: right;
 }
 #numberOfPeople {
   background-image: url("./images/icon-person.svg");
-  background-position: 10px 5px;
+  background-position: 12px 14px;
   background-repeat: no-repeat;
   text-align: right;
 }
@@ -138,14 +150,23 @@ strong {
   padding: 0.35rem;
   /* border-color: #9fe8df; */
   border-radius: 0.5rem;
+  border: none;
   background-color: #f3f8fb;
+  height: 35px;
+  font-size: 24px;
+  color: #00474b;
+  font-weight: bold;
 }
 #numberOfPeople:active,
 #bill:active,
 #tip:active {
   border-color: #9fe8df;
+  border: #9fe8df;
 }
-
+.right-p {
+  margin-top: 26.5px;
+  margin-left: 2rem;
+}
 #numberOfPeople {
   margin-bottom: 0.5rem;
 }
